@@ -20,17 +20,17 @@ export class PatientService {
    /* const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '85128b8bafmsh598de6a2854f82ep17d9c7jsnb6456986814c',
+        'X-RapidAPI-Key': '**********',
         'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
       }
     };*/
 
     /*const headers = new Headers();
-    headers.append('X-RapidAPI-Key', '85128b8bafmsh598de6a2854f82ep17d9c7jsnb6456986814c');
+    headers.append('X-RapidAPI-Key', '************');
     headers.append('X-RapidAPI-Host', 'api-nba-v1.p.rapidapi.com');*/
 
     const params = new HttpParams()
-    .set('X-RapidAPI-Key', '85128b8bafmsh598de6a2854f82ep17d9c7jsnb6456986814c')
+    .set('X-RapidAPI-Key', '**************')
     .set('X-RapidAPI-Hostt', "api-nba-v1.p.rapidapi.com");
 
     return this.http.get<any>('https://api-nba-v1.p.rapidapi.com/players?team=1&season=2021', {params})
